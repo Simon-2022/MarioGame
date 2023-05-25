@@ -18,11 +18,11 @@ function setup() {
 	poseNet.on('pose', gotPoses)
 }
 
-function modelLoaded(){
+function modelLoaded() {
 	console.log('Model Loaded!');
 }
 
-function gotPoses(results){
+function gotPoses(results) {
 	if (results.length > 0) {
 		console.log(results);
 		noseX = results[0].pose.nose.x;
